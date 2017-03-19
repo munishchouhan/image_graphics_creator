@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="jscript/jquery-3.1.1.min.js"></script>
+  <script src="jscript/jquery-ui.min.js"></script>
+  <script src="jscript/html2canvas.min.js"></script>
+  <script src="jscript/FileSaver.min.js"></script>
+</head>
+<body>
+<!-- side pane -->
+<div class="sidepane col-sm-2 col-md-2 col-lg-2">
+  <div class="form">
+    <h3>Form</h3>
+	<form method="post" enctype="multipart/form-data" action="/uploads">
+      <input type="file" class="form-control" placeholder="Upload Your Images" name="upload">
+      <button id="submit" class="btn btn-default">upload</button>
+	  </form>
+    <!-- Upload Form here -->
+  </div>
+  <hr />
+  <div class="assets">
+    <h3>Assets</h3>
+    <div class="text">
+        <h4>Text</h4>
+	<input type="text" id="Text" size="15"><br>
+        <button id="addText" class="btn btn-default" onclick="showText()">Add Text</button>
+    </div>
+    <div class="image" >
+        <h4>Images</h4>
+        <ul class="list-unstyled" id="imagelist">
+            <!-- List of images here -->
+        </ul>
+    </div>
+  </div>
+  
+</div>
+<!-- canvas -->
+<div class="canvas col-sm-8 col-md-8 col-lg-8" id="canvas">
+    <div class="block" id="imageCanvas">
+        <!-- Add images and texts to here -->
+    </div>
+	<input type="button" id="SaveImage" value="Save Image" />
+</div>
+<script src="jscript/custom.js"></script>
+</body>
+</html>
