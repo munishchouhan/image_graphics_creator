@@ -1,4 +1,4 @@
-# this app is created using JQuery, Javascript.
+# This app is created using JQuery, Javascript.
 
 #you can add the images to canvas by clicking on the image.
 #you can remove the images/text by right clicking in the same.
@@ -10,6 +10,6 @@
 
 #this application can retain the change after close or refresh of the window.
 
-# i have added a functionality of saving the work as an image using html2canvas and FileSaver libraries.
-# you can press save image button to save the image.
+# I have added a functionality of saving the work as an image using html2canvas and FileSaver libraries.
+# You can press save image button to save the image.
 
